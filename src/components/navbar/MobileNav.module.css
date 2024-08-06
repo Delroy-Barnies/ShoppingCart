@@ -6,9 +6,7 @@
     width: 100vw;
     height: 100vh;
     background-color: whitesmoke;
-
-    transition: ease-in-out 1s;
-    transform: translate(100%, -100%);
+    transition: ease-in-out 0.8s;
 }
 
 .links {
@@ -24,11 +22,12 @@
 }
 
 .link {
-    color: black;
+    color: rgb(86, 85, 85);
     font-family: "DM Sans", sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
     text-decoration: none;
     padding-bottom: 5px;
-    font-size: 1.5rem;
 
     border-bottom-width: 1px;
     border-bottom-style: solid;

@@ -67,10 +67,40 @@
 @media(max-width: 820px) {
     .shop {
         width: 100%;
-        margin-top: 150px;
+        margin-top: 140px;
 
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 400px 1fr;
+        grid-template-rows: 350px 1fr;
+    }
+}
+
+@media(max-width: 484px) {
+    .all {
+        grid-template-columns: repeat(auto-fill, 280px);
+        grid-template-rows: 360px;
+        grid-auto-rows: 360px;
+    }
+
+    .image {
+        width: 90px;
+    }
+    
+    .title {
+        font-size: 1.1rem;
+    }
+    
+    .price {
+        font-size: 1.1rem;
+    }
+    
+    .rating {
+        font-size: 1.1rem;
+    }
+
+    .addToCart {
+        width: 50%;
+        padding: 5px;
+        font-size: 1rem;
     }
 }

@@ -110,14 +110,14 @@ export default function Shop() {
 
     function handleMobileMenuClick() {
         const menu = document.getElementById("mobileNav");
-        menu.style.transform = "translate(0, 0)";
-        menu.style.visibility = "visible";
+        menu.style.transform = "translateY(0)";
+        menu.style.backgroundColor = "whitesmoke";
     }
 
     function handleCloseMenuClick() {
         const menu = document.getElementById("mobileNav");
-        menu.style.transform = "translate(100%, -100%)";
-        menu.style.visibility = "hidden";
+        menu.style.transform = "translateY(-100%)";
+        menu.style.backgroundColor = "transparent";
     }
 
     if (loading) {

@@ -2,7 +2,7 @@
 
 .mobileNav {
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     width: 100vw;
     height: 100vh;
     transition: ease 1s;

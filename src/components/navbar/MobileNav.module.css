@@ -5,7 +5,6 @@
     z-index: 1;
     width: 100vw;
     height: 100vh;
-    background-color: whitesmoke;
     transition: ease-in-out 0.8s;
 }
 
@@ -17,7 +16,7 @@
     flex-direction: column;
     gap: 10px;
 
-    background-color: rgba(205, 205, 205, 0.318);
+   
     padding: 10px;
 }
 
@@ -26,6 +25,7 @@
     font-family: "DM Sans", sans-serif;
     letter-spacing: 2px;
     font-size: 1.5rem;
+    font-weight: bold;
     text-decoration: none;
     padding-bottom: 5px;
 

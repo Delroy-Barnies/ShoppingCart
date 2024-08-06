@@ -7,7 +7,7 @@ export default function MobileNav(props) {
 
     useEffect(() => {
         const menu = document.getElementById("mobileNav");
-        menu.style.transform = "translateY(-100%)";
+        menu.style.transform = "translate(100%, -100%)";
         menu.style.backgroundColor = "transparent";
     }, [section]);
 

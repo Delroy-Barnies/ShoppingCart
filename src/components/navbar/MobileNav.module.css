@@ -21,11 +21,10 @@
 }
 
 .link {
-    color: #1C2327;
+    color: #1c2327cc;
     font-family: "DM Sans", sans-serif;
     letter-spacing: 2px;
     font-size: 1.5rem;
-    font-weight: bold;
     text-decoration: none;
     padding-bottom: 5px;
 

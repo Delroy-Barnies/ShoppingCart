@@ -6,17 +6,21 @@
     width: 100vw;
     height: 100vh;
     transition: ease 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .links {
-    margin-top: 150px;
-    margin-left: 30px;
+    position: relative;
+    top: -80px;
     width: 120px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
 
-   
+
     padding: 10px;
 }
 

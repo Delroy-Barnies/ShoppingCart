@@ -14,6 +14,9 @@ export default function MobileNav(props) {
     return (
         <div className={styles.mobileNav} id="mobileNav">
             <div className={styles.links}>
+                <div style={{ width: "100%", height: "0", paddingBottom: "100%", position: "relative" }}>
+                    <iframe src="https://giphy.com/embed/RFmjTxTo50pkQ" width="100%" height="100%" style={{ position: "absolute" }} frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                </div>
                 <Link to="../about" className={styles.link}>ABOUT</Link>
                 <Link to="../shop" className={styles.link}>SHOP</Link>
                 <Link to="../review" className={styles.link}>REVIEW</Link>

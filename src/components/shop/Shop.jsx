@@ -121,7 +121,7 @@ export default function Shop() {
     }
 
     if (loading) {
-        return <>Page is loading...</>
+        return (<>Page is loading...</>)
     }
 
     return (

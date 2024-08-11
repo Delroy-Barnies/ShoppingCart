@@ -30,16 +30,21 @@ export default function Navbar(props) {
             <div className={styles.linksContainer}>
                 {!props.cartOpened ?
                     <div className={styles.links}>
-                        <a href="https://github.com/Delroy-Barnies/ShoppingCart" target="blank" className={styles.linkItem}><img src={githubIcon} className={styles.github} /></a>
-                        <a href="https://www.linkedin.com/in/delroy-barnies-a6804123b/" target="blank" className={styles.linkItem}><img src={userIcon} className={styles.user} /></a>
-                        <button onClick={props.handleOpenCartClick} className={styles.cartButton} id={styles.cartButton} disabled={props.section === "shop" ? false : true}><img src={cartIcon} className={styles.cart} />
+                        <a href="https://github.com/Delroy-Barnies/ShoppingCart" target="blank" className={styles.linkItem}>
+                            <img alt="github icon" data-testid="githubImg" src={githubIcon} className={styles.github} />
+                        </a>
+                        <a href="https://www.linkedin.com/in/delroy-barnies-a6804123b/" target="blank" className={styles.linkItem}>
+                            <img alt="profile icon" data-testid="profileImg" src={userIcon} className={styles.user} />
+                        </a>
+                        <button data-testid="cartButton" onClick={props.handleOpenCartClick} className={styles.cartButton} id={styles.cartButton} disabled={props.section === "shop" ? false : true}>
+                            <img alt="cart icon" data-testid="cartImg" src={cartIcon} className={styles.cart} />
                             <div className={styles.curItemsInCartContainer}>
                                 <p className={styles.curItemsInCart}>{props.count}</p>
                             </div>
                         </button>
                         <button onClick={props.handleMobileMenuClick} className={styles.menu}><img className={styles.menuIcon} src={menuIcon} /></button>
                     </div> :
-                    <button onClick={props.handleCloseCartClick} className={styles.closeCart}>CLOSE <span className={styles.span}><img className={styles.exitIcon} src={exitIcon}></img></span></button>
+                    <button data-testid="closeButton" onClick={props.handleCloseCartClick} className={styles.closeCart}>CLOSE <span className={styles.span}><img className={styles.exitIcon} src={exitIcon}></img></span></button>
                 }
             </div>
 

@@ -8,7 +8,7 @@ export default function Cart(props) {
     return (
 
         <section id="cart" className={`${styles.cart} hidden`}>
-            <div className={styles.all}>
+            <div data-testid="cart" className={styles.all}>
                 {props.shoppingList.map((item) => {
                     return item ? <div className={styles.item} key={uniqueId()}>
                         <img className={styles.image} src={item.image} />

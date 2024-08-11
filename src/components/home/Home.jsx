@@ -14,10 +14,6 @@ export default function Home(props) {
         });
     }, []);
 
-    if (!background) {
-        return (<>LOADING...</>)
-    }
-
     return (
         <>
             <section className={styles.home} style={{

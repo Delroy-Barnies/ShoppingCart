@@ -14,10 +14,6 @@ export default function About() {
         setContentSlide("contentSlide");
     }, []);
 
-    if (!background) {
-        return (<>LOADING...</>)
-    }
-
     return (
         <section className={styles.about} >
             <div className={`${styles.content} ${contentSlide}`}>

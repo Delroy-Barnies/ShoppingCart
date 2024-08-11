@@ -5,6 +5,7 @@ import "../animations.css";
 import Cart from "../cart/Cart";
 import Footer from "../footer/Footer";
 import Home from "../home/Home";
+import Loader from '../loader/Loader';
 import MobileNav from "../navbar/MobileNav";
 import Navbar from "../navbar/Navbar";
 import Sidebar from "../sidebar/Sidebar";
@@ -121,7 +122,7 @@ export default function Shop() {
     }
 
     if (loading) {
-        return (<>Page is loading...</>)
+        return (<Loader />)
     }
 
     return (

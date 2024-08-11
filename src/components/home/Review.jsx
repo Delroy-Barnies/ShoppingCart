@@ -14,10 +14,6 @@ export default function Review() {
         setContentSlide("contentSlide");
     }, []);
 
-    if (!background) {
-        return (<>LOADING...</>)
-    }
-
     return (
         <section className={styles.about} >
             <div className={styles.image_container}>

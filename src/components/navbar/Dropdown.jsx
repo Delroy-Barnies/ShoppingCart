@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Dropdown(props) {
 
     return (
-        <div className={styles.dropdown}>
+        <div data-testid="dropdown" className={styles.dropdown}>
             <a className={styles.button}>SHOP ALL</a>
             <div className={styles.dropdownContent}>
                 <Link to="../shop/jewelery" className={styles.link}>Jewelery</Link>

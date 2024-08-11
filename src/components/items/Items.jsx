@@ -24,7 +24,7 @@ export default function Items(props) {
                     </div> : null;
                 })
                 : props.data.map((item) => {
-                    if (item.category === category) {
+                    if (item.category === props.category) {
                         return item ? <div className={styles.item} key={uniqueId()}>
                             <img className={styles.image} src={item.image} />
                             <h4 className={styles.title}>{item.title}</h4>

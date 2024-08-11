@@ -19,6 +19,9 @@
     position: relative;
     right: 160px;
     top: -90px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 h3,

@@ -2,7 +2,7 @@ import { createClient } from 'pexels';
 import { useEffect, useState } from "react";
 import styles from "./About.module.css";
 
-export default function About() {
+export default function About(props) {
     const [background, setBackground] = useState(null);
     const [contentSlide, setContentSlide] = useState("");
 
@@ -24,12 +24,10 @@ export default function About() {
             </div>
             <div className={styles.image_container}>
                 <div className={styles.image} style={{
-                    background: `url(${background})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "30% 20%"
+                    backgroundImage: `url(${background})`,
                 }}></div>
             </div>
+
         </section>
     )
 }

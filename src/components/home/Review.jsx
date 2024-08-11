@@ -18,11 +18,7 @@ export default function Review() {
         <section className={styles.about} >
             <div className={styles.image_container}>
                 <div className={styles.image} style={{
-                    background: `url(${background})`,
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    backgroundPosition: "50% 50%",
-                    backgroundSize: "100%"
+                    backgroundImage: `url(${background})`
                 }}></div>
             </div>
             <div className={`${styles.content} ${contentSlide}`}>

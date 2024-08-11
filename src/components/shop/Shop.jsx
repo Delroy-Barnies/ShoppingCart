@@ -1,10 +1,10 @@
-import { uniqueId } from 'lodash';
 import React, { useEffect, useState } from 'react';
 import { useParams } from "react-router-dom";
 import "../animations.css";
 import Cart from "../cart/Cart";
 import Footer from "../footer/Footer";
 import Home from "../home/Home";
+import Items from '../items/Items';
 import Loader from '../loader/Loader';
 import MobileNav from "../navbar/MobileNav";
 import Navbar from "../navbar/Navbar";
@@ -75,7 +75,7 @@ export default function Shop() {
 
     function handleRemoveItem(e) {
         const id = Number(e.target.value);
-        shoppingList.forEach((item, index) => {
+        shoppingList.forEach((item) => {
             if (item.id === id && item.count === 1) {
                 data[id - 1].backgroundColor = "#1C2327";
                 data[id - 1].textContent = "Add to cart";
@@ -148,42 +148,11 @@ export default function Shop() {
 
                     <section className={styles.shop}>
                         <Sidebar className={sidebarSlide} />
-                        <div className={`${styles.all} ${pageSlide}`}>
-                            {category === undefined ?
-                                data.map((item) => {
-                                    return item ? <div className={styles.item} key={uniqueId()}>
-                                        <img className={styles.image} src={item.image} />
-                                        <h4 className={styles.title}>{item.title}</h4>
-                                        <p className={styles.price}>{"$" + item.price}</p>
-                                        <p className={styles.rating}>{item.rating.rate}</p>
-                                        <button
-                                            onClick={handleAddItemToList}
-                                            id={item.id}
-                                            className={styles.addToCart}
-                                            style={{ backgroundColor: item.backgroundColor }}
-                                            value={item.id}
-                                            disabled={item.disabled}>{item.textContent}</button>
-                                    </div> : null;
-                                })
-                                : data.map((item) => {
-                                    if (item.category === category) {
-                                        return item ? <div className={styles.item} key={uniqueId()}>
-                                            <img className={styles.image} src={item.image} />
-                                            <h4 className={styles.title}>{item.title}</h4>
-                                            <p className={styles.price}>{"$" + item.price}</p>
-                                            <p className={styles.rating}>{item.rating.rate}</p>
-                                            <button
-                                                onClick={handleAddItemToList}
-                                                id={item.id}
-                                                className={styles.addToCart}
-                                                style={{ backgroundColor: item.backgroundColor }}
-                                                value={item.id}
-                                                disabled={item.disabled}>{item.textContent}</button>
-                                        </div> : null;
-                                    }
-                                })
-                            }
-                        </div >
+                        <Items
+                            handleAddItemToList={handleAddItemToList}
+                            category={category}
+                            data={data}
+                            pageSlide={pageSlide} />
                     </section>
 
                 </>

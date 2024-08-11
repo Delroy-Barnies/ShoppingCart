@@ -17,7 +17,7 @@ export default function Cart(props) {
                             <p className={styles.price}>{"$" + item.price}</p>
                             <div className={styles.itemCount}>
                                 <button className={styles.removeItem} value={item.id} onClick={props.handleRemoveItem}>-</button>
-                                <p className={styles.count}>{item.count}</p>
+                                <p data-testid="count" className={styles.count}>{item.count}</p>
                                 <button className={styles.addItem} value={item.id} onClick={props.handleAddItem}>+</button>
                             </div>
                         </div>

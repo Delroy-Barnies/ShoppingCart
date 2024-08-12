@@ -45,7 +45,7 @@ export default function Shop() {
         let count = 0;
         shoppingList.forEach(item => {
             if (item.count > 1) {
-                for (let i = 0; i <= item.count; i++) {
+                for (let i = 1; i <= item.count; i++) {
                     total += item.price;
                 }
             } else {

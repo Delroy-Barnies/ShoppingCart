@@ -13,7 +13,7 @@ export default function Items(props) {
                         <img className={styles.image} src={item.image} />
                         <h4 className={styles.title}>{item.title}</h4>
                         <p className={styles.price}>{"$" + item.price}</p>
-                        <p className={styles.rating}>{item.rating.rate}</p>
+                        <p className={styles.rating}>{"Rating " + item.rating.rate}</p>
                         <button
                             onClick={props.handleAddItemToList}
                             id={item.id}

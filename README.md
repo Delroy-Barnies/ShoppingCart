@@ -1,8 +1,28 @@
-# React + Vite
+# 💳 ShoppingCart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist JavaScript shopping cart demo showcasing product listing, cart management, and checkout flow.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+Check it out: [shopping-cart-psi-ochre.vercel.app](https://shopping-cart-psi-ochre.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Features
+
+- Browse products with images, names, and prices  
+- Add items to your cart and view the total  
+- Choose payment methods like EVC Plus or PayPal  
+- See a running total before checking out (`Total Amount: $…`) :contentReference[oaicite:1]{index=1}  
+- Checkout button (static/demo functionality)
+
+## 🧩 Tech Stack
+
+- Plain **JavaScript** (ES6+)  
+- **HTML5** & **CSS3** for layout and styling  
+- (Optional: deployed via **Vercel**)
+
+## Contributors
+
+- Delroy DL Barnies <Delroybarnies99@gmail.com>
+
+## License and copyright
+
+© Delroy DL Barnies

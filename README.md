@@ -9,7 +9,7 @@ Check it out: [shopping-cart-psi-ochre.vercel.app](https://shopping-cart-psi-och
 
 - Browse products with images, names, and prices  
 - Add items to your cart and view the total  
-- See a running total before checking out (`Total Amount: $…`)
+- See a running total before checking out
 - Checkout button (static/demo functionality)
 
 ## 🧩 Tech Stack
